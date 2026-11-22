@@ -1,0 +1,1549 @@
+{
+  "protocol_version": 1,
+  "summary": {
+    "low_constant": {
+      "n": 12,
+      "accepted": 12,
+      "rejected": 0,
+      "correct_delivered": 12,
+      "wrong_accepted": 0,
+      "no_correct_delivery_fraction": 0.0,
+      "misspecified_accepted": null,
+      "median_heldout_rmse": 0.012679348296756446
+    },
+    "high_constant": {
+      "n": 12,
+      "accepted": 0,
+      "rejected": 12,
+      "correct_delivered": 0,
+      "wrong_accepted": 0,
+      "no_correct_delivery_fraction": 1.0,
+      "misspecified_accepted": null,
+      "median_heldout_rmse": 0.05469318028692727
+    },
+    "low_sloped": {
+      "n": 12,
+      "accepted": 0,
+      "rejected": 12,
+      "correct_delivered": 0,
+      "wrong_accepted": 0,
+      "no_correct_delivery_fraction": 1.0,
+      "misspecified_accepted": 0,
+      "median_heldout_rmse": 0.3168291039621258
+    }
+  },
+  "cases": [
+    {
+      "id": "scan_001",
+      "truth": {
+        "regime": "low_constant",
+        "seed": 461,
+        "kind": "single",
+        "width_um": 83.3,
+        "spacing_um": 0.0,
+        "sigma_au": 0.012,
+        "background_au": 0.68,
+        "background_slope_au_per_mm": 0.0
+      },
+      "fit": {
+        "id": "scan_001",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 82,
+            "spacing_um": 0,
+            "gain": 1.1459491964240387,
+            "background": 0.6768881615831104,
+            "sse": 0.01907289021454356,
+            "heldout_rmse": 0.012770205056086437
+          },
+          "double": {
+            "width_um": 92,
+            "spacing_um": 250,
+            "gain": 1.089321890218087,
+            "background": 0.9731900592668059,
+            "sse": 14.39627493548673,
+            "heldout_rmse": 0.22253395182688526
+          }
+        },
+        "selected": "single",
+        "reportable": true,
+        "reason": "within noise budget"
+      },
+      "width_error_um": 1.3,
+      "spacing_error_um": 0.0,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_002",
+      "truth": {
+        "regime": "high_constant",
+        "seed": 461,
+        "kind": "single",
+        "width_um": 83.3,
+        "spacing_um": 0.0,
+        "sigma_au": 0.055,
+        "background_au": 0.68,
+        "background_slope_au_per_mm": 0.0
+      },
+      "fit": {
+        "id": "scan_002",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 82,
+            "spacing_um": 0,
+            "gain": 1.141124391999285,
+            "background": 0.6809918664055269,
+            "sse": 0.3529212711742752,
+            "heldout_rmse": 0.050981751802182916
+          },
+          "double": {
+            "width_um": 90,
+            "spacing_um": 250,
+            "gain": 1.088080036733327,
+            "background": 0.9723591327219792,
+            "sse": 14.321595296823705,
+            "heldout_rmse": 0.23219838537503804
+          }
+        },
+        "selected": "single",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 1.3,
+      "spacing_error_um": 0.0,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_003",
+      "truth": {
+        "regime": "low_sloped",
+        "seed": 461,
+        "kind": "single",
+        "width_um": 83.3,
+        "spacing_um": 0.0,
+        "sigma_au": 0.012,
+        "background_au": 0.68,
+        "background_slope_au_per_mm": 0.055
+      },
+      "fit": {
+        "id": "scan_003",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 84,
+            "spacing_um": 0,
+            "gain": 1.1366644034194953,
+            "background": 0.6914310074491533,
+            "sse": 11.396726935218027,
+            "heldout_rmse": 0.31807203947059487
+          },
+          "double": {
+            "width_um": 98,
+            "spacing_um": 200,
+            "gain": 1.1129711555891857,
+            "background": 0.9749021996319398,
+            "sse": 25.433410604795963,
+            "heldout_rmse": 0.39277977713786977
+          }
+        },
+        "selected": "single",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 0.7,
+      "spacing_error_um": 0.0,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_004",
+      "truth": {
+        "regime": "low_constant",
+        "seed": 923,
+        "kind": "single",
+        "width_um": 83.3,
+        "spacing_um": 0.0,
+        "sigma_au": 0.012,
+        "background_au": 0.74,
+        "background_slope_au_per_mm": -0.0
+      },
+      "fit": {
+        "id": "scan_004",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 84,
+            "spacing_um": 0,
+            "gain": 1.1529008693567953,
+            "background": 0.7408990376524974,
+            "sse": 0.017899211301068207,
+            "heldout_rmse": 0.012735505521254863
+          },
+          "double": {
+            "width_um": 94,
+            "spacing_um": 255,
+            "gain": 1.0969624889491463,
+            "background": 1.033286742858026,
+            "sse": 14.56255534395289,
+            "heldout_rmse": 0.21759289810612692
+          }
+        },
+        "selected": "single",
+        "reportable": true,
+        "reason": "within noise budget"
+      },
+      "width_error_um": 0.7,
+      "spacing_error_um": 0.0,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_005",
+      "truth": {
+        "regime": "high_constant",
+        "seed": 923,
+        "kind": "single",
+        "width_um": 83.3,
+        "spacing_um": 0.0,
+        "sigma_au": 0.055,
+        "background_au": 0.74,
+        "background_slope_au_per_mm": -0.0
+      },
+      "fit": {
+        "id": "scan_005",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 84,
+            "spacing_um": 0,
+            "gain": 1.1579376818301783,
+            "background": 0.7361897527347794,
+            "sse": 0.35651291359716325,
+            "heldout_rmse": 0.05873129989557221
+          },
+          "double": {
+            "width_um": 96,
+            "spacing_um": 335,
+            "gain": 1.1166572316187897,
+            "background": 1.0263144768417733,
+            "sse": 15.044450688198076,
+            "heldout_rmse": 0.2117564980884573
+          }
+        },
+        "selected": "single",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 0.7,
+      "spacing_error_um": 0.0,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_006",
+      "truth": {
+        "regime": "low_sloped",
+        "seed": 923,
+        "kind": "single",
+        "width_um": 83.3,
+        "spacing_um": 0.0,
+        "sigma_au": 0.012,
+        "background_au": 0.74,
+        "background_slope_au_per_mm": -0.055
+      },
+      "fit": {
+        "id": "scan_006",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 82,
+            "spacing_um": 0,
+            "gain": 1.162343337252781,
+            "background": 0.7261663245803387,
+            "sse": 11.41981835140703,
+            "heldout_rmse": 0.31651156526306157
+          },
+          "double": {
+            "width_um": 90,
+            "spacing_um": 255,
+            "gain": 1.094995980005443,
+            "background": 1.025369642126425,
+            "sse": 26.25817542643078,
+            "heldout_rmse": 0.3756019074475494
+          }
+        },
+        "selected": "single",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 1.3,
+      "spacing_error_um": 0.0,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_007",
+      "truth": {
+        "regime": "low_constant",
+        "seed": 1877,
+        "kind": "single",
+        "width_um": 83.3,
+        "spacing_um": 0.0,
+        "sigma_au": 0.012,
+        "background_au": 0.8,
+        "background_slope_au_per_mm": 0.0
+      },
+      "fit": {
+        "id": "scan_007",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 84,
+            "spacing_um": 0,
+            "gain": 1.1484296832457672,
+            "background": 0.8036309513443396,
+            "sse": 0.027731625673309303,
+            "heldout_rmse": 0.011267765519455944
+          },
+          "double": {
+            "width_um": 94,
+            "spacing_um": 255,
+            "gain": 1.0935195126924355,
+            "background": 1.0947194122481403,
+            "sse": 14.440865759985197,
+            "heldout_rmse": 0.21730586849981995
+          }
+        },
+        "selected": "single",
+        "reportable": true,
+        "reason": "within noise budget"
+      },
+      "width_error_um": 0.7,
+      "spacing_error_um": 0.0,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_008",
+      "truth": {
+        "regime": "high_constant",
+        "seed": 1877,
+        "kind": "single",
+        "width_um": 83.3,
+        "spacing_um": 0.0,
+        "sigma_au": 0.055,
+        "background_au": 0.8,
+        "background_slope_au_per_mm": 0.0
+      },
+      "fit": {
+        "id": "scan_008",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 82,
+            "spacing_um": 0,
+            "gain": 1.1334990642045488,
+            "background": 0.8022275023834294,
+            "sse": 0.5325950533388187,
+            "heldout_rmse": 0.052125491600411626
+          },
+          "double": {
+            "width_um": 94,
+            "spacing_um": 400,
+            "gain": 1.0959426412118307,
+            "background": 1.091327834610222,
+            "sse": 14.537031938299368,
+            "heldout_rmse": 0.2124434499109507
+          }
+        },
+        "selected": "single",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 1.3,
+      "spacing_error_um": 0.0,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_009",
+      "truth": {
+        "regime": "low_sloped",
+        "seed": 1877,
+        "kind": "single",
+        "width_um": 83.3,
+        "spacing_um": 0.0,
+        "sigma_au": 0.012,
+        "background_au": 0.8,
+        "background_slope_au_per_mm": 0.055
+      },
+      "fit": {
+        "id": "scan_009",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 84,
+            "spacing_um": 0,
+            "gain": 1.1350728396919967,
+            "background": 0.8116562106638505,
+            "sse": 11.295903029157301,
+            "heldout_rmse": 0.3188126190545025
+          },
+          "double": {
+            "width_um": 96,
+            "spacing_um": 335,
+            "gain": 1.0983992359428059,
+            "background": 1.0952777672634204,
+            "sse": 25.323232502296715,
+            "heldout_rmse": 0.39742510475951814
+          }
+        },
+        "selected": "single",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 0.7,
+      "spacing_error_um": 0.0,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_010",
+      "truth": {
+        "regime": "low_constant",
+        "seed": 10461,
+        "kind": "single",
+        "width_um": 132.7,
+        "spacing_um": 0.0,
+        "sigma_au": 0.012,
+        "background_au": 0.68,
+        "background_slope_au_per_mm": -0.0
+      },
+      "fit": {
+        "id": "scan_010",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 132,
+            "spacing_um": 0,
+            "gain": 1.14931485152597,
+            "background": 0.6784764987334166,
+            "sse": 0.02528114300866306,
+            "heldout_rmse": 0.010560648231221161
+          },
+          "double": {
+            "width_um": 150,
+            "spacing_um": 200,
+            "gain": 1.2433375185712823,
+            "background": 0.8685270535669103,
+            "sse": 10.031504243083187,
+            "heldout_rmse": 0.1949767013101606
+          }
+        },
+        "selected": "single",
+        "reportable": true,
+        "reason": "within noise budget"
+      },
+      "width_error_um": 0.7,
+      "spacing_error_um": 0.0,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_011",
+      "truth": {
+        "regime": "high_constant",
+        "seed": 10461,
+        "kind": "single",
+        "width_um": 132.7,
+        "spacing_um": 0.0,
+        "sigma_au": 0.055,
+        "background_au": 0.68,
+        "background_slope_au_per_mm": -0.0
+      },
+      "fit": {
+        "id": "scan_011",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 134,
+            "spacing_um": 0,
+            "gain": 1.148488383716293,
+            "background": 0.6859601215258799,
+            "sse": 0.5159258209415823,
+            "heldout_rmse": 0.050470360609614635
+          },
+          "double": {
+            "width_um": 150,
+            "spacing_um": 200,
+            "gain": 1.2581997046379854,
+            "background": 0.8678544988867086,
+            "sse": 10.12336238020684,
+            "heldout_rmse": 0.20500231800429122
+          }
+        },
+        "selected": "single",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 1.3,
+      "spacing_error_um": 0.0,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_012",
+      "truth": {
+        "regime": "low_sloped",
+        "seed": 10461,
+        "kind": "single",
+        "width_um": 132.7,
+        "spacing_um": 0.0,
+        "sigma_au": 0.012,
+        "background_au": 0.68,
+        "background_slope_au_per_mm": -0.055
+      },
+      "fit": {
+        "id": "scan_012",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 130,
+            "spacing_um": 0,
+            "gain": 1.1510467507493467,
+            "background": 0.6698172655922541,
+            "sse": 11.462319407951421,
+            "heldout_rmse": 0.3169451491362552
+          },
+          "double": {
+            "width_um": 150,
+            "spacing_um": 200,
+            "gain": 1.2432847096368191,
+            "background": 0.8664857612020338,
+            "sse": 21.5669228176939,
+            "heldout_rmse": 0.3667477287609458
+          }
+        },
+        "selected": "single",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 2.7,
+      "spacing_error_um": 0.0,
+      "geometry_correct": false
+    },
+    {
+      "id": "scan_013",
+      "truth": {
+        "regime": "low_constant",
+        "seed": 10923,
+        "kind": "single",
+        "width_um": 132.7,
+        "spacing_um": 0.0,
+        "sigma_au": 0.012,
+        "background_au": 0.74,
+        "background_slope_au_per_mm": 0.0
+      },
+      "fit": {
+        "id": "scan_013",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 132,
+            "spacing_um": 0,
+            "gain": 1.1441517235625067,
+            "background": 0.7403189523930442,
+            "sse": 0.022630614301081233,
+            "heldout_rmse": 0.009045488800908955
+          },
+          "double": {
+            "width_um": 150,
+            "spacing_um": 200,
+            "gain": 1.2290691677025243,
+            "background": 0.9306639589891492,
+            "sse": 10.132253986530381,
+            "heldout_rmse": 0.19474757148097036
+          }
+        },
+        "selected": "single",
+        "reportable": true,
+        "reason": "within noise budget"
+      },
+      "width_error_um": 0.7,
+      "spacing_error_um": 0.0,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_014",
+      "truth": {
+        "regime": "high_constant",
+        "seed": 10923,
+        "kind": "single",
+        "width_um": 132.7,
+        "spacing_um": 0.0,
+        "sigma_au": 0.055,
+        "background_au": 0.74,
+        "background_slope_au_per_mm": 0.0
+      },
+      "fit": {
+        "id": "scan_014",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 132,
+            "spacing_um": 0,
+            "gain": 1.1240622489306271,
+            "background": 0.7487037742753095,
+            "sse": 0.470646136544764,
+            "heldout_rmse": 0.041425978868440225
+          },
+          "double": {
+            "width_um": 150,
+            "spacing_um": 200,
+            "gain": 1.1928031054249335,
+            "background": 0.9376486592811446,
+            "sse": 10.546158977558493,
+            "heldout_rmse": 0.20273492238257226
+          }
+        },
+        "selected": "single",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 0.7,
+      "spacing_error_um": 0.0,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_015",
+      "truth": {
+        "regime": "low_sloped",
+        "seed": 10923,
+        "kind": "single",
+        "width_um": 132.7,
+        "spacing_um": 0.0,
+        "sigma_au": 0.012,
+        "background_au": 0.74,
+        "background_slope_au_per_mm": 0.055
+      },
+      "fit": {
+        "id": "scan_015",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 134,
+            "spacing_um": 0,
+            "gain": 1.1426128985607258,
+            "background": 0.7487473553545932,
+            "sse": 11.242914634987088,
+            "heldout_rmse": 0.3167130587879965
+          },
+          "double": {
+            "width_um": 150,
+            "spacing_um": 200,
+            "gain": 1.229121976636987,
+            "background": 0.9327052513540264,
+            "sse": 21.258695198483405,
+            "heldout_rmse": 0.37605343931014784
+          }
+        },
+        "selected": "single",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 1.3,
+      "spacing_error_um": 0.0,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_016",
+      "truth": {
+        "regime": "low_constant",
+        "seed": 11877,
+        "kind": "single",
+        "width_um": 132.7,
+        "spacing_um": 0.0,
+        "sigma_au": 0.012,
+        "background_au": 0.8,
+        "background_slope_au_per_mm": -0.0
+      },
+      "fit": {
+        "id": "scan_016",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 132,
+            "spacing_um": 0,
+            "gain": 1.1459592760000819,
+            "background": 0.7999114468089359,
+            "sse": 0.018975046430319865,
+            "heldout_rmse": 0.011066184557663561
+          },
+          "double": {
+            "width_um": 150,
+            "spacing_um": 200,
+            "gain": 1.234461445965278,
+            "background": 0.9901008575807053,
+            "sse": 10.083869652705628,
+            "heldout_rmse": 0.19463233428225726
+          }
+        },
+        "selected": "single",
+        "reportable": true,
+        "reason": "within noise budget"
+      },
+      "width_error_um": 0.7,
+      "spacing_error_um": 0.0,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_017",
+      "truth": {
+        "regime": "high_constant",
+        "seed": 11877,
+        "kind": "single",
+        "width_um": 132.7,
+        "spacing_um": 0.0,
+        "sigma_au": 0.055,
+        "background_au": 0.8,
+        "background_slope_au_per_mm": -0.0
+      },
+      "fit": {
+        "id": "scan_017",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 134,
+            "spacing_um": 0,
+            "gain": 1.13304315647462,
+            "background": 0.8124773422586729,
+            "sse": 0.38834892014992717,
+            "heldout_rmse": 0.051473449204908775
+          },
+          "double": {
+            "width_um": 150,
+            "spacing_um": 200,
+            "gain": 1.2175177215411965,
+            "background": 0.995067764891584,
+            "sse": 10.265834534626919,
+            "heldout_rmse": 0.20375610990432566
+          }
+        },
+        "selected": "single",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 1.3,
+      "spacing_error_um": 0.0,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_018",
+      "truth": {
+        "regime": "low_sloped",
+        "seed": 11877,
+        "kind": "single",
+        "width_um": 132.7,
+        "spacing_um": 0.0,
+        "sigma_au": 0.012,
+        "background_au": 0.8,
+        "background_slope_au_per_mm": -0.055
+      },
+      "fit": {
+        "id": "scan_018",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 130,
+            "spacing_um": 0,
+            "gain": 1.1476998133395986,
+            "background": 0.7912672192440295,
+            "sse": 11.319027275510368,
+            "heldout_rmse": 0.3183848300713382
+          },
+          "double": {
+            "width_um": 150,
+            "spacing_um": 200,
+            "gain": 1.2344086370308165,
+            "background": 0.9880595652158273,
+            "sse": 21.4822973854654,
+            "heldout_rmse": 0.367789670235863
+          }
+        },
+        "selected": "single",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 2.7,
+      "spacing_error_um": 0.0,
+      "geometry_correct": false
+    },
+    {
+      "id": "scan_019",
+      "truth": {
+        "regime": "low_constant",
+        "seed": 20461,
+        "kind": "double",
+        "width_um": 95.1,
+        "spacing_um": 263.4,
+        "sigma_au": 0.012,
+        "background_au": 0.68,
+        "background_slope_au_per_mm": 0.0
+      },
+      "fit": {
+        "id": "scan_019",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 96,
+            "spacing_um": 0,
+            "gain": 0.5877901446905075,
+            "background": 0.6719636158756995,
+            "sse": 7.205686068305933,
+            "heldout_rmse": 0.0324893684238395
+          },
+          "double": {
+            "width_um": 96,
+            "spacing_um": 265,
+            "gain": 1.1530892269856123,
+            "background": 0.6796987266705578,
+            "sse": 0.025614849536604152,
+            "heldout_rmse": 0.013023703225706224
+          }
+        },
+        "selected": "double",
+        "reportable": true,
+        "reason": "within noise budget"
+      },
+      "width_error_um": 0.9,
+      "spacing_error_um": 1.6,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_020",
+      "truth": {
+        "regime": "high_constant",
+        "seed": 20461,
+        "kind": "double",
+        "width_um": 95.1,
+        "spacing_um": 263.4,
+        "sigma_au": 0.055,
+        "background_au": 0.68,
+        "background_slope_au_per_mm": 0.0
+      },
+      "fit": {
+        "id": "scan_020",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 96,
+            "spacing_um": 0,
+            "gain": 0.6002141418167578,
+            "background": 0.6636557004776464,
+            "sse": 7.2191504796322254,
+            "heldout_rmse": 0.06786789413261957
+          },
+          "double": {
+            "width_um": 98,
+            "spacing_um": 265,
+            "gain": 1.1574078896389932,
+            "background": 0.6789251954678259,
+            "sse": 0.4247958998032801,
+            "heldout_rmse": 0.0573533543216941
+          }
+        },
+        "selected": "double",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 2.9,
+      "spacing_error_um": 1.6,
+      "geometry_correct": false
+    },
+    {
+      "id": "scan_021",
+      "truth": {
+        "regime": "low_sloped",
+        "seed": 20461,
+        "kind": "double",
+        "width_um": 95.1,
+        "spacing_um": 263.4,
+        "sigma_au": 0.012,
+        "background_au": 0.68,
+        "background_slope_au_per_mm": 0.055
+      },
+      "fit": {
+        "id": "scan_021",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 100,
+            "spacing_um": 0,
+            "gain": 0.5830398546415246,
+            "background": 0.6826831508835742,
+            "sse": 18.461344122805926,
+            "heldout_rmse": 0.3181445729205505
+          },
+          "double": {
+            "width_um": 102,
+            "spacing_um": 265,
+            "gain": 1.1652956844614044,
+            "background": 0.6890335917645765,
+            "sse": 11.360444405604937,
+            "heldout_rmse": 0.3150155528344508
+          }
+        },
+        "selected": "double",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 6.9,
+      "spacing_error_um": 1.6,
+      "geometry_correct": false
+    },
+    {
+      "id": "scan_022",
+      "truth": {
+        "regime": "low_constant",
+        "seed": 20923,
+        "kind": "double",
+        "width_um": 95.1,
+        "spacing_um": 263.4,
+        "sigma_au": 0.012,
+        "background_au": 0.74,
+        "background_slope_au_per_mm": -0.0
+      },
+      "fit": {
+        "id": "scan_022",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 96,
+            "spacing_um": 0,
+            "gain": 0.5827720807982041,
+            "background": 0.7344740721113282,
+            "sse": 7.366853085134404,
+            "heldout_rmse": 0.02975848772489739
+          },
+          "double": {
+            "width_um": 96,
+            "spacing_um": 265,
+            "gain": 1.1548018806200793,
+            "background": 0.7398090836939661,
+            "sse": 0.031087614548300238,
+            "heldout_rmse": 0.014737360125830679
+          }
+        },
+        "selected": "double",
+        "reportable": true,
+        "reason": "within noise budget"
+      },
+      "width_error_um": 0.9,
+      "spacing_error_um": 1.6,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_023",
+      "truth": {
+        "regime": "high_constant",
+        "seed": 20923,
+        "kind": "double",
+        "width_um": 95.1,
+        "spacing_um": 263.4,
+        "sigma_au": 0.055,
+        "background_au": 0.74,
+        "background_slope_au_per_mm": -0.0
+      },
+      "fit": {
+        "id": "scan_023",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 96,
+            "spacing_um": 0,
+            "gain": 0.5772146663602715,
+            "background": 0.7351619681444403,
+            "sse": 8.081329588959987,
+            "heldout_rmse": 0.0680642529621909
+          },
+          "double": {
+            "width_um": 96,
+            "spacing_um": 265,
+            "gain": 1.1568286035778976,
+            "background": 0.7378126600533735,
+            "sse": 0.5710627995906015,
+            "heldout_rmse": 0.06541071526002827
+          }
+        },
+        "selected": "double",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 0.9,
+      "spacing_error_um": 1.6,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_024",
+      "truth": {
+        "regime": "low_sloped",
+        "seed": 20923,
+        "kind": "double",
+        "width_um": 95.1,
+        "spacing_um": 263.4,
+        "sigma_au": 0.012,
+        "background_au": 0.74,
+        "background_slope_au_per_mm": -0.055
+      },
+      "fit": {
+        "id": "scan_024",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 92,
+            "spacing_um": 0,
+            "gain": 0.5882448659640128,
+            "background": 0.7231654817030057,
+            "sse": 18.839040473114135,
+            "heldout_rmse": 0.3146648122381153
+          },
+          "double": {
+            "width_um": 90,
+            "spacing_um": 265,
+            "gain": 1.1451290578594728,
+            "background": 0.7290824459662825,
+            "sse": 11.384118069138673,
+            "heldout_rmse": 0.3202272440805837
+          }
+        },
+        "selected": "double",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 5.1,
+      "spacing_error_um": 1.6,
+      "geometry_correct": false
+    },
+    {
+      "id": "scan_025",
+      "truth": {
+        "regime": "low_constant",
+        "seed": 21877,
+        "kind": "double",
+        "width_um": 95.1,
+        "spacing_um": 263.4,
+        "sigma_au": 0.012,
+        "background_au": 0.8,
+        "background_slope_au_per_mm": 0.0
+      },
+      "fit": {
+        "id": "scan_025",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 96,
+            "spacing_um": 0,
+            "gain": 0.5873556241633034,
+            "background": 0.7933567733138123,
+            "sse": 7.2096618049152195,
+            "heldout_rmse": 0.030099125500928182
+          },
+          "double": {
+            "width_um": 96,
+            "spacing_um": 265,
+            "gain": 1.1528951630968516,
+            "background": 0.8009532021618879,
+            "sse": 0.024330133122423707,
+            "heldout_rmse": 0.01230194924052802
+          }
+        },
+        "selected": "double",
+        "reportable": true,
+        "reason": "within noise budget"
+      },
+      "width_error_um": 0.9,
+      "spacing_error_um": 1.6,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_026",
+      "truth": {
+        "regime": "high_constant",
+        "seed": 21877,
+        "kind": "double",
+        "width_um": 95.1,
+        "spacing_um": 263.4,
+        "sigma_au": 0.055,
+        "background_au": 0.8,
+        "background_slope_au_per_mm": 0.0
+      },
+      "fit": {
+        "id": "scan_026",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 96,
+            "spacing_um": 0,
+            "gain": 0.5982225431328606,
+            "background": 0.7900410253769712,
+            "sse": 7.268291301398775,
+            "heldout_rmse": 0.061711730549580776
+          },
+          "double": {
+            "width_um": 94,
+            "spacing_um": 265,
+            "gain": 1.139809502216462,
+            "background": 0.8013434899530103,
+            "sse": 0.4476169046068036,
+            "heldout_rmse": 0.05473596807032937
+          }
+        },
+        "selected": "double",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 1.1,
+      "spacing_error_um": 1.6,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_027",
+      "truth": {
+        "regime": "low_sloped",
+        "seed": 21877,
+        "kind": "double",
+        "width_um": 95.1,
+        "spacing_um": 263.4,
+        "sigma_au": 0.012,
+        "background_au": 0.8,
+        "background_slope_au_per_mm": 0.055
+      },
+      "fit": {
+        "id": "scan_027",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 100,
+            "spacing_um": 0,
+            "gain": 0.5825612717406102,
+            "background": 0.8040888242424711,
+            "sse": 18.529732076761643,
+            "heldout_rmse": 0.3230655870161397
+          },
+          "double": {
+            "width_um": 100,
+            "spacing_um": 265,
+            "gain": 1.15661423177782,
+            "background": 0.8087893669193594,
+            "sse": 11.427750245471515,
+            "heldout_rmse": 0.31890724023690303
+          }
+        },
+        "selected": "double",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 4.9,
+      "spacing_error_um": 1.6,
+      "geometry_correct": false
+    },
+    {
+      "id": "scan_028",
+      "truth": {
+        "regime": "low_constant",
+        "seed": 30461,
+        "kind": "double",
+        "width_um": 123.7,
+        "spacing_um": 373.6,
+        "sigma_au": 0.012,
+        "background_au": 0.68,
+        "background_slope_au_per_mm": -0.0
+      },
+      "fit": {
+        "id": "scan_028",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 124,
+            "spacing_um": 0,
+            "gain": 0.5767318983780801,
+            "background": 0.6798356430781425,
+            "sse": 5.609434651941419,
+            "heldout_rmse": 0.015800672900531103
+          },
+          "double": {
+            "width_um": 124,
+            "spacing_um": 375,
+            "gain": 1.1518433647927624,
+            "background": 0.6795565114220841,
+            "sse": 0.019070095455353094,
+            "heldout_rmse": 0.014226313475352855
+          }
+        },
+        "selected": "double",
+        "reportable": true,
+        "reason": "within noise budget"
+      },
+      "width_error_um": 0.3,
+      "spacing_error_um": 1.4,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_029",
+      "truth": {
+        "regime": "high_constant",
+        "seed": 30461,
+        "kind": "double",
+        "width_um": 123.7,
+        "spacing_um": 373.6,
+        "sigma_au": 0.055,
+        "background_au": 0.68,
+        "background_slope_au_per_mm": -0.0
+      },
+      "fit": {
+        "id": "scan_029",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 128,
+            "spacing_um": 0,
+            "gain": 0.5892838875961699,
+            "background": 0.6796576026799012,
+            "sse": 5.82914355092766,
+            "heldout_rmse": 0.06483199638459285
+          },
+          "double": {
+            "width_um": 124,
+            "spacing_um": 375,
+            "gain": 1.1569413008293976,
+            "background": 0.6762046117364352,
+            "sse": 0.3898479713231135,
+            "heldout_rmse": 0.06607526927525921
+          }
+        },
+        "selected": "double",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 0.3,
+      "spacing_error_um": 1.4,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_030",
+      "truth": {
+        "regime": "low_sloped",
+        "seed": 30461,
+        "kind": "double",
+        "width_um": 123.7,
+        "spacing_um": 373.6,
+        "sigma_au": 0.012,
+        "background_au": 0.68,
+        "background_slope_au_per_mm": -0.055
+      },
+      "fit": {
+        "id": "scan_030",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 118,
+            "spacing_um": 0,
+            "gain": 0.5792845981354264,
+            "background": 0.6671894032827489,
+            "sse": 16.888003483254746,
+            "heldout_rmse": 0.317409133612165
+          },
+          "double": {
+            "width_um": 118,
+            "spacing_um": 375,
+            "gain": 1.1385463156729687,
+            "background": 0.670278255110698,
+            "sse": 11.330696313361141,
+            "heldout_rmse": 0.3160408770879975
+          }
+        },
+        "selected": "double",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 5.7,
+      "spacing_error_um": 1.4,
+      "geometry_correct": false
+    },
+    {
+      "id": "scan_031",
+      "truth": {
+        "regime": "low_constant",
+        "seed": 30923,
+        "kind": "double",
+        "width_um": 123.7,
+        "spacing_um": 373.6,
+        "sigma_au": 0.012,
+        "background_au": 0.74,
+        "background_slope_au_per_mm": 0.0
+      },
+      "fit": {
+        "id": "scan_031",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 126,
+            "spacing_um": 0,
+            "gain": 0.5693305786976492,
+            "background": 0.7471843209396369,
+            "sse": 5.663953255592907,
+            "heldout_rmse": 0.01690856892024603
+          },
+          "double": {
+            "width_um": 124,
+            "spacing_um": 375,
+            "gain": 1.1464743561733328,
+            "background": 0.7422047747329261,
+            "sse": 0.021737555674818786,
+            "heldout_rmse": 0.013477476668107401
+          }
+        },
+        "selected": "double",
+        "reportable": true,
+        "reason": "within noise budget"
+      },
+      "width_error_um": 0.3,
+      "spacing_error_um": 1.4,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_032",
+      "truth": {
+        "regime": "high_constant",
+        "seed": 30923,
+        "kind": "double",
+        "width_um": 123.7,
+        "spacing_um": 373.6,
+        "sigma_au": 0.055,
+        "background_au": 0.74,
+        "background_slope_au_per_mm": 0.0
+      },
+      "fit": {
+        "id": "scan_032",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 132,
+            "spacing_um": 0,
+            "gain": 0.5550269249463331,
+            "background": 0.7645674550038807,
+            "sse": 6.110201819612474,
+            "heldout_rmse": 0.06590355960577804
+          },
+          "double": {
+            "width_um": 124,
+            "spacing_um": 375,
+            "gain": 1.13233333724428,
+            "background": 0.7483424886552025,
+            "sse": 0.4422823159776406,
+            "heldout_rmse": 0.06119990714570728
+          }
+        },
+        "selected": "double",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 0.3,
+      "spacing_error_um": 1.4,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_033",
+      "truth": {
+        "regime": "low_sloped",
+        "seed": 30923,
+        "kind": "double",
+        "width_um": 123.7,
+        "spacing_um": 373.6,
+        "sigma_au": 0.012,
+        "background_au": 0.74,
+        "background_slope_au_per_mm": 0.055
+      },
+      "fit": {
+        "id": "scan_033",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 130,
+            "spacing_um": 0,
+            "gain": 0.5671737741841014,
+            "background": 0.7560777718739523,
+            "sse": 16.930687053695124,
+            "heldout_rmse": 0.3109218902400141
+          },
+          "double": {
+            "width_um": 128,
+            "spacing_um": 375,
+            "gain": 1.1548073890962447,
+            "background": 0.7491586456749272,
+            "sse": 11.255739060005538,
+            "heldout_rmse": 0.3120875711994361
+          }
+        },
+        "selected": "double",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 4.3,
+      "spacing_error_um": 1.4,
+      "geometry_correct": false
+    },
+    {
+      "id": "scan_034",
+      "truth": {
+        "regime": "low_constant",
+        "seed": 31877,
+        "kind": "double",
+        "width_um": 123.7,
+        "spacing_um": 373.6,
+        "sigma_au": 0.012,
+        "background_au": 0.8,
+        "background_slope_au_per_mm": -0.0
+      },
+      "fit": {
+        "id": "scan_034",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 124,
+            "spacing_um": 0,
+            "gain": 0.5714402732256025,
+            "background": 0.8022775595803308,
+            "sse": 5.5305802476973565,
+            "heldout_rmse": 0.013989612084948174
+          },
+          "double": {
+            "width_um": 124,
+            "spacing_um": 375,
+            "gain": 1.1422742954379708,
+            "background": 0.8018355985773813,
+            "sse": 0.022304950063044247,
+            "heldout_rmse": 0.01262319107225803
+          }
+        },
+        "selected": "double",
+        "reportable": true,
+        "reason": "within noise budget"
+      },
+      "width_error_um": 0.3,
+      "spacing_error_um": 1.4,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_035",
+      "truth": {
+        "regime": "high_constant",
+        "seed": 31877,
+        "kind": "double",
+        "width_um": 123.7,
+        "spacing_um": 373.6,
+        "sigma_au": 0.055,
+        "background_au": 0.8,
+        "background_slope_au_per_mm": -0.0
+      },
+      "fit": {
+        "id": "scan_035",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 120,
+            "spacing_um": 0,
+            "gain": 0.5638512701199939,
+            "background": 0.7984526822496105,
+            "sse": 5.495138600222074,
+            "heldout_rmse": 0.0525272829954242
+          },
+          "double": {
+            "width_um": 122,
+            "spacing_um": 375,
+            "gain": 1.108270054548266,
+            "background": 0.8043958861304595,
+            "sse": 0.4224833967531764,
+            "heldout_rmse": 0.05465039250352517
+          }
+        },
+        "selected": "double",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 1.7,
+      "spacing_error_um": 1.4,
+      "geometry_correct": true
+    },
+    {
+      "id": "scan_036",
+      "truth": {
+        "regime": "low_sloped",
+        "seed": 31877,
+        "kind": "double",
+        "width_um": 123.7,
+        "spacing_um": 373.6,
+        "sigma_au": 0.012,
+        "background_au": 0.8,
+        "background_slope_au_per_mm": -0.055
+      },
+      "fit": {
+        "id": "scan_036",
+        "training": 145,
+        "heldout": 36,
+        "fits": {
+          "single": {
+            "width_um": 116,
+            "spacing_um": 0,
+            "gain": 0.573671397497532,
+            "background": 0.786585942071247,
+            "sse": 16.9004872683187,
+            "heldout_rmse": 0.31669868073768825
+          },
+          "double": {
+            "width_um": 118,
+            "spacing_um": 375,
+            "gain": 1.1292121593582745,
+            "background": 0.792595778973851,
+            "sse": 11.429324657160986,
+            "heldout_rmse": 0.31489500874396276
+          }
+        },
+        "selected": "double",
+        "reportable": false,
+        "reason": "held-out residual exceeds 0.04 AU"
+      },
+      "width_error_um": 5.7,
+      "spacing_error_um": 1.4,
+      "geometry_correct": false
+    }
+  ]
+}

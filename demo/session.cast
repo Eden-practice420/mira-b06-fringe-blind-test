@@ -1,0 +1,11 @@
+{"version": 2, "width": 100, "height": 24, "title": "B06-fringe-blind-test / 本地科学复演", "env": {"TERM": "xterm-256color"}}
+[0, "o", "$ python -X utf8 demo/replay.py\r\n"]
+[0.1768, "o", "RUN  lock_training.py\r\n"]
+[1.0967, "o", "训练已锁定 | SHA-256 a3e6b0f68511ddd3\r\n"]
+[1.0967, "o", "RUN  reveal.py\r\n"]
+[1.6857, "o", "flat | 正确通过 8/8 -> 8/8 | v2 拒绝 0\r\n"]
+[1.6857, "o", "linear | 正确通过 0/8 -> 8/8 | v2 拒绝 0\r\n"]
+[1.6857, "o", "curved | 正确通过 0/8 -> 0/8 | v2 拒绝 8\r\n"]
+[1.6857, "o", "noisy | 正确通过 0/8 -> 0/8 | v2 拒绝 8\r\n"]
+[1.6857, "o", "heldout_glare | 正确通过 0/8 -> 0/8 | v2 拒绝 8\r\n"]
+[1.6857, "o", "线性组留出 RMSE 中位 | 0.192967 -> 0.013278\r\n"]
